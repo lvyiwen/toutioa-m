@@ -4,6 +4,18 @@ import router from './router'
 import store from './store'
 // 导入全局样式文件
 import './styles/index.less'
+// 加载Vant 核心组件库
+import Vant from 'vant'
+
+// 加载 Vant全局样式
+import 'vant/lib/index.css'
+// 加载动态设置 rem基准值
+import 'amfe-flexible'
+
+// 加载day.js 初始化配置
+import './utils/dayjs'
+// 注册使用Vant 组件库
+Vue.use(Vant)
 Vue.config.productionTip = false
 
 new Vue({
